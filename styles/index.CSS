@@ -15,6 +15,14 @@
   	background-color: transparent;
 	text-decoration: none;
 	}
+	
+ .center-wrapper {
+	 text-align: center;
+	 }
+	 
+ .center-wrapper * {
+	 margin: 0 auto;
+	 }
 
 /* Hover Bounce Out */	
 .hvr-bounce-out {
