@@ -13,7 +13,7 @@
 <body>
 
 <div id="page" data-role="page" data-theme="a">
-	<div data-role="header" data-theme="a">
+	<div data-role="header" data-theme="a" data-position="fixed">
 	  <div class="logo"><img src="images/images.png" width="218" height="45" alt=""/></div>
       <h4>Drive Maintenance</h4>
 	</div>
@@ -30,7 +30,7 @@
 					<li><a href="#Notes">Notes</a></li>
 				</ul>
 	</div>
-	<div data-role="footer" data-theme="a">
+	<div data-role="footer" data-theme="a" data-position="fixed">
 	  <h4>Drive Maintenance App; 2016</h4>
 	</div>
 
@@ -136,10 +136,10 @@
 
 	</div>
 
-	<div id="Notes" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+	<div id="Notes" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>Notes</h1>
-			<a href="#NewNotes" class="ui-btn ui-icon-check ui-btn-icon-right">New</a>
+			<a href="#NewNotes" class="ui-btn ui-icon-comment ui-btn-icon-right">New</a>
 			<a href="#Edit" class="ui-btn ui-icon-edit ui-btn-icon-right">Edit Notes</a>
 		</div>
 		<div data-role="content" data-theme="a">
@@ -157,13 +157,13 @@
 			</form>
 			<a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
 		</div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-	<div id="NewNotes" data-role="page" data-theme="b">
-		<div data-role="header" data-theme="a">
+	<div id="NewNotes" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>Enter New Note</h1>
 			<a href="#Notes" data-rel="close" class="ui-btn ui-icon-back ui-btn-icon-right">Back</a>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
@@ -183,13 +183,13 @@
 				}
 			</script>
 		</div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-    <div id="dterr" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+    <div id="dterr" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>3.16.9.68 SRVO-068 DTERR alarm</h1>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 		</div>
@@ -205,13 +205,13 @@
       	<p>4. Replace the servo amplifier.</p>
       	<p>5. Replace the robot interconnection cable (for the pulse coder).</p>
     </div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-    <div id="crcerr" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+    <div id="crcerr" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>3.16.9.69 SRVO-069 CRCERR alarm</h1>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 		</div>
@@ -227,13 +227,13 @@
       	<p>4. Replace the servo amplifier.</p>
       	<p>5. Replace the robot interconnection cable (for the pulse coder).</p>
     </div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-    <div id="ohal2" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+    <div id="ohal2" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>3.16.9.67 SRVO-067 OHAL2 alarm</h1>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 		</div>
@@ -247,13 +247,13 @@
       	<p>2. If this alarm is issued, even when the power is turned on and the motor has not overheated, replace the motor</p>
         <p>3. Cycle power to the robot, give the robot time to cool down before starting in auto.</p>
     </div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-	<div id="Ovc" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+	<div id="Ovc" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>3.16.9.80 SRVO-080 OVC alarm</h1>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 		</div>
@@ -282,13 +282,13 @@
         <p>6. When this alarm occurs on the auxiliary axis which brake is controlled by the aux. brake unit, check the fuse on the aux. brake unit.</p>
         <p>7. If this alarm cannot be reset, the troubles of related parts are though. Refer to the Controller Maintneance Manual for more information. About auxiliary axis, refer to the Auxiliary Axis Option Maintenance Manual.</p>
     </div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-  <div id="Pnots" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+  <div id="Pnots" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>3.16.13.19 SYST-019 Program not selected</h1>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 		</div>
@@ -302,13 +302,13 @@
       	<p>2. Home out the robot and start cell in auto.</p>
         <p>3. Force robot back into the right location in the correct PNS program.</p>
     </div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-	<div id="Bzal" data-role="page" data-theme="b" data-add-back-btn="true">
-		<div data-role="header" data-theme="a">
+	<div id="Bzal" data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<h1>3.16.9.62 SRVO-062 BZAL alarm</h1>
 			<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 		</div>
@@ -323,13 +323,13 @@
 				<p>Method 1: Move the cursor to $MCR.$SPC_RESET on the system variable screen, and select F4 TRUE. It becomes TRUE momentarily, it writes in FALSE at once. Then push the rest button.</p>
 				<p>Method 2: F3 RES_PCA is pushed on the MASTER/CAL screen, and select F4 YES. Then press the alarm release button. Note, The MASTER/CAL screen is not usually displayed.</p>
 		</div>
-		<div data-role="footer" data-theme="b">
+		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-	<div id="backup" data-role="page" data-theme="b" data-add-back-btn="true">
-	<div data-role="header" data-theme="a">
+	<div id="backup" data-role="page" data-theme="a">
+	<div data-role="header" data-theme="a" data-position="fixed">
 		<h1>Backing up System and Program Files</h1>
 		<a href="#page" data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-right">Home</a>
 	</div>
@@ -357,7 +357,7 @@
 			<h4>8. Choose the backup operation that you would like to perform and press the appropriate function key.</h4>
 				<p></p>
 	</div>
-	<div data-role="footer" data-theme="b">
+	<div data-role="footer" data-theme="b" data-position="fixed">
 		<h4>Drive Maintenance App; 2016</h4>
 	</div>
 </div>
