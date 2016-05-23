@@ -13,6 +13,8 @@
 
 	$(document).on("pageshow","#NewNotes",function() {
 		document.getElementById("Submited").innerHTML = " ";
+		$("#title").val(' ');
+		$("#content").val(' ');
 	});
 
 	$(document).on("pageshow", "#Notes", function() {
