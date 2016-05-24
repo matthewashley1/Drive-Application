@@ -22,30 +22,30 @@
 		$('#select-native-1').val(1).selectmenu('refresh');
 	});
 
-	$( document ).on( "pagecreate", function() {
-			$( "#theme-selector input" ).on( "change", function( event ) {
-				var themeClass = $( "#theme-selector input:checked" ).attr( "id" );
+	$(document).on("pagecreate", function() {
+			$("#theme-selector input").on("change", function(event) {
+				var themeClass = $("#theme-selector input:checked").attr("id");
 
-				$( "#page" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#FanucErrors" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#FanucProcedures" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#AbbErrors" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#AbbSr4Procedures" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#MaintenanceSop" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#FanucManuals" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#AbbSR4Manuals" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#KukaManuals" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#Notes" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#dterr" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#crcerr" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#ohal2" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#ovc" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#pnots" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#bzal" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#backup" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#set" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#Notes" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#NewNotes" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d" ).addClass( "ui-page-theme-" + themeClass );
+				$("#page").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#FanucErrors").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#FanucProcedures").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#AbbErrors").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#AbbSr4Procedures").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#MaintenanceSop").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#FanucManuals").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#AbbSR4Manuals").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#KukaManuals").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#Notes").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#dterr").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#crcerr").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#ohal2").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#ovc").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#pnots").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#bzal").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#backup").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#set").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#Notes").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
+				$("#NewNotes").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d").addClass("ui-page-theme-" + themeClass);
 			});
 	});
 </script>
@@ -71,7 +71,7 @@
 					<li><a href="#Notes">Notes</a></li>
 				</ul>
 	</div>
-	<div data-role="footer" class="ui-page-theme-a" data-position="fixed">
+	<div data-role="footer" class="ui-page-theme-b" data-position="fixed">
 		<h4>Drive Maintenance App; 2016</h4>
 	</div>
 
