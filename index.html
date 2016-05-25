@@ -79,7 +79,7 @@
 				$("#Theme5").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
 				$("#Theme6").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
 				$("#fontDefault").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
-				$("#fontTNR").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#fontUni").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
 				$("#fontCS").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
 				$("#fontAB").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
 				$("#setHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
@@ -281,8 +281,8 @@
         	<input type="radio" name="radio-choice-v-2" id="1" value="first" checked="checked">
         	<label for="1" id="fontDefault" class="font1">Default</label>
         	<input type="radio" name="radio-choice-v-2" id="2" value="second">
-        	<label for="2" id="fontTNR" class="font1">Times New Roman</label>
-        	<input type="radio" name="radio-choice-v-2" id="3" value="third">
+        	<label for="2" id="fontUni" class="font1">Unicode</label>
+        	<input type="radio" name="radio-choice-v-2" class="radio3" id="3" value="third">
         	<label for="3" id="fontCS" class="font1">Comic Sans</label>
 					<input type="radio" name="radio-choice-v-2" id="4" value="forth">
 					<label for="4" id="fontAB" class="font1">Arial Black</label>
@@ -290,6 +290,13 @@
 				</div>
 			</form>
 		</div>
+
+		<!-- <script type="text/javascript">
+		$(document).on('vclick', '.radio3', function(e){
+			$(".txtwrapper").css('font-size', '25px');
+		});
+		</script> -->
+
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
