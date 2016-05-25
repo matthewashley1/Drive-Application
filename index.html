@@ -36,7 +36,6 @@
 				$("#FanucManuals").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
 				$("#AbbSR4Manuals").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
 				$("#KukaManuals").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
-				$("#Notes").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
 				$("#dterr").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
 				$("#crcerr").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
 				$("#ohal2").removeClass("ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e ui-page-theme-f").addClass("ui-page-theme-" + themeClass);
@@ -50,140 +49,208 @@
 			});
 	});
 
+	$(document).on("pagecreate", function() {
+			$("#font-selector input").on("change", function(event) {
+				var fontClass = $("#font-selector input:checked").attr("id");
+
+				$("#page").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FanucErrors").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FanucProcedures").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#AbbErrors").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#AbbSr4Procedures").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#MaintenanceSop").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FanucManuals").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#AbbSR4Manuals").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#KukaManuals").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#dterr").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#crcerr").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ohal2").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ovc").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#pnots").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#bzal").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#backup").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#set").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Notes").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NewNotes").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Theme1").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Theme2").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Theme3").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Theme4").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Theme5").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#Theme6").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#fontDefault").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#fontTNR").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#fontCS").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#fontAB").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#setHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FE").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FP").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#AE").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ASr4P").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#MSop").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FM").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ASr4M").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#KM").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#N").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#pageSet").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FEClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FPClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#AEClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ASr4PClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#MSopClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#FMClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ASr4MClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#KMClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#dterrHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#crcerrHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ohal2Home").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#ovcHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#pnotsHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#bzalHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#backupHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NotesNew").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NotesEN").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NotesClose").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NewNotesBack").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NewNotesHome").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				$("#NewNotesSubmit").removeClass("font1 font2 font3 font4").addClass("font" + fontClass);
+				});
+		});
+
 </script>
 
 </head>
 <body>
 
-<div id="page" data-role="page" class="ui-page-theme-a">
-	<div data-role="header" class="ui-page-theme-a" data-position="fixed">
+<div id="page" data-role="page" class="ui-page-theme-a font1">
+	<div data-role="header" class="ui-page-theme-a ui-header ui-bar-a" role="banner" data-position="fixed">
 		<div class="logo"><img src="images/images.png" width="218" height="45" alt=""/></div>
 		<h4>Drive Maintenance</h4>
-		<a href="#set" class="ui-btn ui-btn-right ui-icon-gear ui-btn-icon-right ui-corner-all">Settings</a>
+		<a href="#set" id="pageSet" class="ui-btn ui-btn-right ui-icon-gear ui-btn-icon-right ui-corner-all font1">Settings</a>
 	</div>
-			 <div data-role="content">
+			 <div data-role="content" class="ui-content" role="main">
 				<ul data-role="listview" class="ui-page-theme-a" data-divider-theme="a">
-					<li><a href="#FanucErrors">Fanuc Errors</a></li>
-					<li><a href="#FanucProcedures">Fanuc Procedures</a></li>
-					<li><a href="#AbbErrors">ABB Errors</a></li>
-					<li><a href="#AbbSr4Procedures">ABB SR4 Procedures</a></li>
-					<li><a href="#MaintenanceSop">Maintenance SOP</a></li>
-					<li><a href="#FanucManuals">Fanuc Manuals</a></li>
-					<li><a href="#AbbSR4Manuals">ABB SR4 Manuals</a></li>
-					<li><a href="#KukaManuals">KUKA Manuals</a></li>
-					<li><a href="#Notes">Notes</a></li>
+					<li><a href="#FanucErrors" id="FE" class="font1">Fanuc Errors</a></li>
+					<li><a href="#FanucProcedures" id="FP" class="font1">Fanuc Procedures</a></li>
+					<li><a href="#AbbErrors" id="AE" class="font1">ABB Errors</a></li>
+					<li><a href="#AbbSr4Procedures" id="ASr4P" class="font1">ABB SR4 Procedures</a></li>
+					<li><a href="#MaintenanceSop" id="MSop" class="font1">Maintenance SOP</a></li>
+					<li><a href="#FanucManuals" id="FM" class="font1">Fanuc Manuals</a></li>
+					<li><a href="#AbbSR4Manuals" id="ASr4M" class="font1">ABB SR4 Manuals</a></li>
+					<li><a href="#KukaManuals" id="KM" class="font1">KUKA Manuals</a></li>
+					<li><a href="#Notes" id="N" class="font1">Notes</a></li>
 				</ul>
 	</div>
-	<div data-role="footer" class="ui-page-theme-b" data-position="fixed">
+	<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 		<h4>Drive Maintenance App; 2016</h4>
 	</div>
 
-			 <div data-role="panel" id="FanucErrors">
+			 <div data-role="panel" class="font1" id="FanucErrors">
 					<h2>Fanuc Errors</h2>
 						<ul>
-							<li class="menu1"><a href="#dterr" title="Menu 1">DTERR Alarm</a></li><br>
-							<li class="menu2"><a href="#crcerr" title="Menu 2">CRCERR Alarm</a></li><br>
-							<li class="menu3"><a href="#ohal2" title="Menu 3">OHAL2 Alarm</a></li><br>
-							<li class="menu4"><a href="#ovc" title="Menu 4">OVC Alarm</a></li><br>
-							<li class="menu5"><a href="#pnots" title="Menu 5">Program Not Selected</a></li><br>
-							<li class="menu6"><a href="#bzal" title="Menu 6">BZAL Alarm</a></li><br>
+							<li><a href="#dterr" title="Menu 1">DTERR Alarm</a></li><br>
+							<li><a href="#crcerr" title="Menu 2">CRCERR Alarm</a></li><br>
+							<li><a href="#ohal2" title="Menu 3">OHAL2 Alarm</a></li><br>
+							<li ><a href="#ovc" title="Menu 4">OVC Alarm</a></li><br>
+							<li><a href="#pnots" title="Menu 5">Program Not Selected</a></li><br>
+							<li><a href="#bzal" title="Menu 6">BZAL Alarm</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="FEClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="FanucProcedures">
+			<div data-role="panel" class="font1" id="FanucProcedures">
 					<h2>Fanuc Procedures</h2>
 						<ul>
-							<li class="menu1"><a href="#backup" title="Menu 1">Backups</a></li><br>
-							<li class="menu2"><a href="#" title="Menu 2">Menu 2</a></li><br>
-							<li class="menu3"><a href="#" title="Menu 3">Menu 3</a></li><br>
-							<li class="menu4"><a href="#" title="Menu 4">Menu 4</a></li><br>
-							<li class="menu5"><a href="#" title="Menu 5">Menu 5</a></li><br>
+							<li><a href="#backup" title="Menu 1">Backups</a></li><br>
+							<li><a href="#" title="Menu 2">Menu 2</a></li><br>
+							<li><a href="#" title="Menu 3">Menu 3</a></li><br>
+							<li><a href="#" title="Menu 4">Menu 4</a></li><br>
+							<li><a href="#" title="Menu 5">Menu 5</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="FPClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="AbbErrors">
+			<div data-role="panel" class="font1" id="AbbErrors">
 					<h2>ABB Errors</h2>
 						<ul>
-							<li class="menu1"><a href="#" title="Menu 1">Menu 1</a></li><br>
-							<li class="menu2"><a href="#" title="Menu 2">Menu 2</a></li><br>
-							<li class="menu3"><a href="#" title="Menu 3">Menu 3</a></li><br>
-							<li class="menu4"><a href="#" title="Menu 4">Menu 4</a></li><br>
-							<li class="menu5"><a href="#" title="Menu 5">Menu 5</a></li><br>
+							<li><a href="#" title="Menu 1">Menu 1</a></li><br>
+							<li><a href="#" title="Menu 2">Menu 2</a></li><br>
+							<li><a href="#" title="Menu 3">Menu 3</a></li><br>
+							<li><a href="#" title="Menu 4">Menu 4</a></li><br>
+							<li><a href="#" title="Menu 5">Menu 5</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="AEClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="AbbSr4Procedures">
+			<div data-role="panel" class="font1" id="AbbSr4Procedures">
 					<h2>ABB SR4 Procedures</h2>
 						<ul>
-							<li class="menu1"><a href="#" title="Menu 1">Menu 1</a></li><br>
-							<li class="menu2"><a href="#" title="Menu 2">Menu 2</a></li><br>
-							<li class="menu3"><a href="#" title="Menu 3">Menu 3</a></li><br>
-							<li class="menu4"><a href="#" title="Menu 4">Menu 4</a></li><br>
-							<li class="menu5"><a href="#" title="Menu 5">Menu 5</a></li><br>
+							<li><a href="#" title="Menu 1">Menu 1</a></li><br>
+							<li><a href="#" title="Menu 2">Menu 2</a></li><br>
+							<li><a href="#" title="Menu 3">Menu 3</a></li><br>
+							<li><a href="#" title="Menu 4">Menu 4</a></li><br>
+							<li><a href="#" title="Menu 5">Menu 5</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="ASr4PClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="MaintenanceSop">
+			<div data-role="panel" class="font1" id="MaintenanceSop">
 					<h2>Maintenance SOP</h2>
 						<ul>
-							<li class="menu1"><a href="#" title="Menu 1">Menu 1</a></li><br>
-							<li class="menu2"><a href="#" title="Menu 2">Menu 2</a></li><br>
-							<li class="menu3"><a href="#" title="Menu 3">Menu 3</a></li><br>
-							<li class="menu4"><a href="#" title="Menu 4">Menu 4</a></li><br>
-							<li class="menu5"><a href="#" title="Menu 5">Menu 5</a></li><br>
+							<li><a href="#" title="Menu 1">Menu 1</a></li><br>
+							<li><a href="#" title="Menu 2">Menu 2</a></li><br>
+							<li><a href="#" title="Menu 3">Menu 3</a></li><br>
+							<li><a href="#" title="Menu 4">Menu 4</a></li><br>
+							<li><a href="#" title="Menu 5">Menu 5</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="MSopClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="FanucManuals">
+			<div data-role="panel" class="font1" id="FanucManuals">
 					<h2>Fanuc Manuals</h2>
 						<ul>
-							<li class="menu1"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Error%20Codes.pdf" title="Menu 1">Error Codes.pdf</a></li><br>
-							<li class="menu2"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/DeviceNet.pdf" title="Menu 2">Device Net.pdf</a></li><br>
-							<li class="menu3"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Handling%20Tool%20Setup.pdf" title="Menu 3">Handling Tool Setup.pdf</a></li><br>
-							<li class="menu4"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Dual%20Check%20Safety%20DSC.pdf" title="Menu 4">Dual Check Safety DSC.pdf</a></li><br>
-							<li class="menu5"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Ethernet_IP.pdf" title="Menu 5">Ethernet IP.pdf</a></li><br>
-							<li class="menu6"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/LR%20Handling%20Tool%20Options.pdf" title="Menu 6">LR Handling Tool Options.pdf</a></li><br>
-							<li class="menu7"><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/iPendant%20Customization.pdf" title="Menu 7">iPendant Customization.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Error%20Codes.pdf" title="Menu 1">Error Codes.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/DeviceNet.pdf" title="Menu 2">Device Net.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Handling%20Tool%20Setup.pdf" title="Menu 3">Handling Tool Setup.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Dual%20Check%20Safety%20DSC.pdf" title="Menu 4">Dual Check Safety DSC.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/Ethernet_IP.pdf" title="Menu 5">Ethernet IP.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/LR%20Handling%20Tool%20Options.pdf" title="Menu 6">LR Handling Tool Options.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/Fanuc%20Manuals/iPendant%20Customization.pdf" title="Menu 7">iPendant Customization.pdf</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="FMClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="AbbSR4Manuals">
+			<div data-role="panel" class="font1" id="AbbSR4Manuals">
 					<h2>ABB SR4 Manuals</h2>
 						<ul>
-							<li class="menu1"><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/RAPID%20Reference%20Manual%203.2%20(3HAC%205783-1).pdf" title="Menu 1">Rapid Reference 3.2.pdf</a></li><br>
-								<li class="menu2"><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/Rapid%20Reference%202.1.pdf" title="Menu 2">Rapid Reference 2.1.pdf</a></li><br>
-								<li class="menu3"><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4-M94a%20Basic%20Operations.pdf" title="Menu 3">S4-M94a Basic Operations.pdf</a></li><br>
-								<li class="menu4"><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4-User's%20Guide%202.1.pdf" title="Menu 4">S4-User's Guide 2.1.pdf</a></li><br>
-								<li class="menu5"><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4C-User's%20Guide%203.2%20(3HAC%205783-1).pdf" title="Menu 5">S4C-User's Guide 3.2.pdf</a></li><br>
-								<li class="menu6"><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4CPlus-user%20guide%204_0_100.pdf" title="Menu 6">S4CPlus-User's Guide 4.0.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/RAPID%20Reference%20Manual%203.2%20(3HAC%205783-1).pdf" title="Menu 1">Rapid Reference 3.2.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/Rapid%20Reference%202.1.pdf" title="Menu 2">Rapid Reference 2.1.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4-M94a%20Basic%20Operations.pdf" title="Menu 3">S4-M94a Basic Operations.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4-User's%20Guide%202.1.pdf" title="Menu 4">S4-User's Guide 2.1.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4C-User's%20Guide%203.2%20(3HAC%205783-1).pdf" title="Menu 5">S4C-User's Guide 3.2.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/ABB%20SR4%20Manuals/S4CPlus-user%20guide%204_0_100.pdf" title="Menu 6">S4CPlus-User's Guide 4.0.pdf</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="ASr4MClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-			<div data-role="panel" id="KukaManuals">
+			<div data-role="panel" class="font1" id="KukaManuals">
 					<h2>KUKA Manulas</h2>
 						<ul>
-							<li class="menu1"><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/KRC4%20Manual.pdf" title="Menu 1">KRC4 Manual.pdf</a></li><br>
-								<li class="menu2"><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/KRC4%20Programming%20Advanced%208.2.pdf" title="Menu 2">KRC4 Programming 8.2.pdf</a></li><br>
-								<li class="menu3"><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/operator%20manual.pdf" title="Menu 3">Operator Manual.pdf</a></li><br>
-								<li class="menu4"><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/System_Variables_en.pdf" title="Menu 4">System Variables.pdf</a></li><br>
-								<li class="menu5"><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/Programming%20messages_en.pdf" title="Menu 5">Programming Messages.pdf</a></li><br>
+							<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/KRC4%20Manual.pdf" title="Menu 1">KRC4 Manual.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/KRC4%20Programming%20Advanced%208.2.pdf" title="Menu 2">KRC4 Programming 8.2.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/operator%20manual.pdf" title="Menu 3">Operator Manual.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/System_Variables_en.pdf" title="Menu 4">System Variables.pdf</a></li><br>
+								<li><a href="http://sotd.us/matthewashley/Drive%20Manuals/KUKA%20Manuals/Programming%20messages_en.pdf" title="Menu 5">Programming Messages.pdf</a></li><br>
 						</ul>
-				 <a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+				 <a href="#page" id="KMClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 			</div>
 
-	</div>
+	</div> <!-- Closing div for main page -->
 
-	<div id="set" data-role="page" class="ui-page-theme-a">
+	<div id="set" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>Settings</h1>
-				<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+				<a href="#page" id="setHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
 		</div>
 		<div data-role="content" role="main">
 			<form>
@@ -191,17 +258,34 @@
         <fieldset data-role="controlgroup" data-type="vertical" >
         	<legend>App Theme:</legend>
         	<input type="radio" name="radio-choice-v-2" id="a" value="first" checked="checked">
-        	<label for="a">Light</label>
+        	<label for="a" id="Theme1" class="font1">Light</label>
         	<input type="radio" name="radio-choice-v-2" id="b" value="second">
-        	<label for="b">Dark</label>
+        	<label for="b" id="Theme2" class="font1">Dark</label>
         	<input type="radio" name="radio-choice-v-2" id="c" value="third">
-        	<label for="c">Dark Bright</label>
+        	<label for="c" id="Theme3" class="font1">Dark Bright</label>
 					<input type="radio" name="radio-choice-v-2" id="d" value="forth">
-					<label for="d">Gray</label>
+					<label for="d" id="Theme4" class="font1">Gray</label>
 					<input type="radio" name="radio-choice-v-2" id="e" value="fifth">
-					<label for="e">Rose</label>
+					<label for="e" id="Theme5" class="font1">Rose</label>
 					<input type="radio" name="radio-choice-v-2" id="f" value="sixth">
-					<label for="f">Rainbow</label>
+					<label for="f" id="Theme6" class="font1">Rainbow</label>
+    		</fieldset>
+				</div>
+			</form>
+		</div>
+		<div data-role="content" role="">
+			<form>
+				<div class="ui-field-contain" id="font-selector">
+        <fieldset data-role="controlgroup" data-type="vertical" >
+        	<legend>App Font:</legend>
+        	<input type="radio" name="radio-choice-v-2" id="1" value="first" checked="checked">
+        	<label for="1" id="fontDefault" class="font1">Default</label>
+        	<input type="radio" name="radio-choice-v-2" id="2" value="second">
+        	<label for="2" id="fontTNR" class="font1">Times New Roman</label>
+        	<input type="radio" name="radio-choice-v-2" id="3" value="third">
+        	<label for="3" id="fontCS" class="font1">Comic Sans</label>
+					<input type="radio" name="radio-choice-v-2" id="4" value="forth">
+					<label for="4" id="fontAB" class="font1">Arial Black</label>
     		</fieldset>
 				</div>
 			</form>
@@ -211,11 +295,11 @@
 		</div>
 	</div>
 
-	<div id="Notes" data-role="page" class="ui-page-theme-a">
+	<div id="Notes" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>Notes</h1>
-			<a href="#NewNotes" class="ui-btn ui-btn-left ui-icon-comment ui-btn-icon-right ui-corner-all">New</a>
-			<a href="#Edit" class="ui-btn ui-btn-right ui-icon-edit ui-btn-icon-right ui-corner-all">Edit Notes</a>
+			<a href="#NewNotes" id="NotesNew" class="ui-btn ui-btn-left ui-icon-comment ui-btn-icon-right ui-corner-all font1">New</a>
+			<a href="#Edit" id="NotesEN" class="ui-btn ui-btn-right ui-icon-edit ui-btn-icon-right ui-corner-all font1">Edit Notes</a>
 		</div>
 		<div data-role="content">
 			<form>
@@ -230,18 +314,18 @@
 					</select>
 				</div>
 			</form>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Close</a>
+			<a href="#page" id="NotesClose" data-rel="close" class="ui-btn ui-btn-inline ui-corner-all ui-shadow font1">Close</a>
 		</div>
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
-	<div id="NewNotes" data-role="page" class="ui-page-theme-a">
+	<div id="NewNotes" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>Enter New Note</h1>
-			<a href="#Notes" data-rel="close" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-right ui-corner-all">Back</a>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-right ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#Notes" id="NewNotesBack" data-rel="close" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-right ui-corner-all font1">Back</a>
+			<a href="#page" id="NewNotesHome" data-rel="close" class="ui-btn ui-btn-right ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<label for="title">Enter Title</label>
@@ -249,7 +333,7 @@
 			<label for="content">Enter Content:</label>
 			<textarea name="content" rows="8" cols="40" id="content"></textarea>
 
-			<button type="btn" class="" onclick="Submit()">Submit</button>
+			<button type="btn" id="NewNotesSubmit" class="font1" onclick="Submit()">Submit</button>
 			<p id="Submited"></p>
 
 			<script type="text/javascript">
@@ -265,10 +349,10 @@
 		</div>
 	</div>
 
-		<div id="dterr" data-role="page" class="ui-page-theme-a">
+		<div id="dterr" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>SRVO-068 DTERR</h1>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#page" id="dterrHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<h3>Cause:</h3>
@@ -287,10 +371,10 @@
 		</div>
 	</div>
 
-		<div id="crcerr" data-role="page" class="ui-page-theme-a">
+		<div id="crcerr" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>SRVO-069 CRCERR</h1>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#page" id="crcerrHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<h3>Cause:</h3>
@@ -309,10 +393,10 @@
 		</div>
 	</div>
 
-		<div id="ohal2" data-role="page" class="ui-page-theme-a">
+		<div id="ohal2" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>SRVO-067 OHAL2</h1>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#page" id="ohal2Home" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<h3>Cause:</h3>
@@ -329,10 +413,10 @@
 		</div>
 	</div>
 
-		<div id="ovc" data-role="page" class="ui-page-theme-a">
+		<div id="ovc" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>SRVO-080 OVC</h1>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#page" id="ovcHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<h3>Cause:</h3>
@@ -364,10 +448,10 @@
 		</div>
 	</div>
 
-		<div id="pnots" data-role="page" class="ui-page-theme-a">
+		<div id="pnots" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>SYST-019 Program not selected</h1>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#page" id="pnotsHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<h3>Cause:</h3>
@@ -384,10 +468,10 @@
 		</div>
 	</div>
 
-		<div id="bzal" data-role="page" class="ui-page-theme-a">
+		<div id="bzal" data-role="page" class="ui-page-theme-a font1">
 		<div  data-role="header" data-position="fixed">
 			<h1>SRVO-062 BZAL</h1>
-			<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+			<a href="#page" id="bzalHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 		</div>
 		<div data-role="content">
 			<h3>Cause:</h3>
@@ -405,10 +489,10 @@
 		</div>
 	</div>
 
-	<div id="backup" data-role="page" class="ui-page-theme-a">
+	<div id="backup" data-role="page" class="ui-page-theme-a font1">
 	<div data-role="header" data-position="fixed">
 		<h1>Backing up Files</h1>
-		<a href="#page" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all">Home</a>
+		<a href="#page" id="backupHome" data-rel="close" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-right ui-corner-all font1">Home</a>
 	</div>
 	<div data-role="content">
 		<h3>Steps:</h3>

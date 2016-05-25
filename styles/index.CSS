@@ -115,3 +115,19 @@
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
 	}
+
+.font1 {
+	font-family: sans-serif /*{global-font-family}*/;
+}
+
+.font2 {
+	font: 16px "Times New Roman", Times, serif !important;
+}
+
+.font3 {
+	font: 16px "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.font4 {
+	font: 16px "Arial Black", Gadget, sans-serif
+}
