@@ -49,9 +49,9 @@
 			});
 	});
 
- 		//This is a font selector feature located in the settings page. This feature allows the user to select the font
- 		//they want for the application. Feature only works as a Website and not as a JQuery mobile application. Has only been tested
-		//as an Android application.
+ 		/* This is a font selector feature located in the settings page. This feature allows the user to select the font
+ 		they want for the application. Feature only works as a Website and not as a JQuery mobile application. Has only been tested
+		as an Android application. */
 	$(document).on("pagecreate", function() {
 			$("#font-selector input").on("change", function(event) {
 				var fontClass = $("#font-selector input:checked").attr("id");
