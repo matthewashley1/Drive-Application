@@ -49,6 +49,9 @@
 			});
 	});
 
+ 		//This is a font selector feature located in the settings page. This feature allows the user to select the font
+ 		//they want for the application. Feature only works as a Website and not as a JQuery mobile application. Has only been tested
+		//as an Android application.
 	$(document).on("pagecreate", function() {
 			$("#font-selector input").on("change", function(event) {
 				var fontClass = $("#font-selector input:checked").attr("id");
@@ -126,7 +129,7 @@
 	<div data-role="header" class="ui-page-theme-a ui-header ui-bar-a" role="banner" data-position="fixed">
 		<div class="logo"><img src="images/images.png" width="218" height="45" alt=""/></div>
 		<h4>Drive Maintenance</h4>
-		<a href="#set" id="pageSet" class="ui-btn ui-btn-right ui-icon-gear ui-btn-icon-right ui-corner-all font1">Settings</a>
+		<a href="#set" id="pageSet" data-rel="closed" class="ui-btn ui-btn-right ui-icon-gear ui-btn-icon-right ui-corner-all font1">Settings</a>
 	</div>
 			 <div data-role="content" class="ui-content" role="main">
 				<ul data-role="listview" class="ui-page-theme-a" data-divider-theme="a">
@@ -138,7 +141,7 @@
 					<li><a href="#FanucManuals" id="FM" class="font1">Fanuc Manuals</a></li>
 					<li><a href="#AbbSR4Manuals" id="ASr4M" class="font1">ABB SR4 Manuals</a></li>
 					<li><a href="#KukaManuals" id="KM" class="font1">KUKA Manuals</a></li>
-					<li><a href="#Notes" id="N" class="font1">Notes</a></li>
+					<!-- <li><a href="#Notes" id="N" class="font1">Notes</a></li> --> <!--Will Add a comment section at a later date -->
 				</ul>
 	</div>
 	<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
@@ -273,7 +276,8 @@
 				</div>
 			</form>
 		</div>
-		<div data-role="content" role="">
+		<!-- section for a font selector feature, have to fix issues and will add at a later date -->
+		<!-- <div data-role="content" role="">
 			<form>
 				<div class="ui-field-contain" id="font-selector">
         <fieldset data-role="controlgroup" data-type="vertical" >
@@ -289,19 +293,14 @@
     		</fieldset>
 				</div>
 			</form>
-		</div>
-
-		<!-- <script type="text/javascript">
-		$(document).on('vclick', '.radio3', function(e){
-			$(".txtwrapper").css('font-size', '25px');
-		});
-		</script> -->
+		</div> -->
 
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
 
+<!-- Going to be a community comment page! -->
 	<div id="Notes" data-role="page" class="ui-page-theme-a font1">
 		<div data-role="header" data-position="fixed">
 			<h1>Notes</h1>
@@ -373,7 +372,7 @@
 				<p>4. Replace the servo amplifier.</p>
 				<p>5. Replace the robot interconnection cable (for the pulse coder).</p>
 		</div>
-		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
@@ -395,7 +394,7 @@
 				<p>4. Replace the servo amplifier.</p>
 				<p>5. Replace the robot interconnection cable (for the pulse coder).</p>
 		</div>
-		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
@@ -415,7 +414,7 @@
 				<p>2. If this alarm is issued, even when the power is turned on and the motor has not overheated, replace the motor</p>
 				<p>3. Cycle power to the robot, give the robot time to cool down before starting in auto.</p>
 		</div>
-		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
@@ -450,7 +449,7 @@
 				<p>6. When this alarm occurs on the auxiliary axis which brake is controlled by the aux. brake unit, check the fuse on the aux. brake unit.</p>
 				<p>7. If this alarm cannot be reset, the troubles of related parts are though. Refer to the Controller Maintneance Manual for more information. About auxiliary axis, refer to the Auxiliary Axis Option Maintenance Manual.</p>
 		</div>
-		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
@@ -470,7 +469,7 @@
 				<p>2. Home out the robot and start cell in auto.</p>
 				<p>3. Force robot back into the right location in the correct PNS program.</p>
 		</div>
-		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
@@ -491,7 +490,7 @@
 				<p>Method 1: Move the cursor to $MCR.$SPC_RESET on the system variable screen, and select F4 TRUE. It becomes TRUE momentarily, it writes in FALSE at once. Then push the rest button.</p>
 				<p>Method 2: F3 RES_PCA is pushed on the MASTER/CAL screen, and select F4 YES. Then press the alarm release button. Note, The MASTER/CAL screen is not usually displayed.</p>
 		</div>
-		<div data-role="footer" data-theme="b" data-position="fixed">
+		<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 			<h4>Drive Maintenance App; 2016</h4>
 		</div>
 	</div>
@@ -525,7 +524,7 @@
 			<h4>8. Choose the backup operation that you would like to perform and press the appropriate function key.</h4>
 				<p></p>
 	</div>
-	<div data-role="footer" data-theme="b" data-position="fixed">
+	<div data-role="footer" class="ui-page-theme-b ui-footer ui-bar-a" data-position="fixed">
 		<h4>Drive Maintenance App; 2016</h4>
 	</div>
 </div>
