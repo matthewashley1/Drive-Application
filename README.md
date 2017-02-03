@@ -1,8 +1,10 @@
 # Drive-Application
 This is a JQuery mobile application for my employer's Maintenance Department.
 
-Info on JQuery: http://demos.jquerymobile.com/1.4.5/
+![Demo](http://sotd.us/matthewashley/Drive_Maintenance.gif)
 
-Download app: https://build.phonegap.com/apps/2051223/share
+Info on JQuery: [Link](http://demos.jquerymobile.com/1.4.5/)
+
+Download app: [Drive-Application](https://build.phonegap.com/apps/2051223/share)
 
 
